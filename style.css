@@ -1,0 +1,169 @@
+/* Reset básico de estilo */
+body, h1, h2, p, ul, li, form, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+  background-color: #ffff; /* Fundo branco */
+  color: #000; /* Texto preto */
+  line-height: 1.6;
+  /*padding: 20px;*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #171596; /* Fundo azul escuro */
+  color: #fff; /* Texto branco */
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilo da navegação */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff; /* Links brancos */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(31, 238, 117); /* Destaque verde ao passar o mouse */
+}
+
+/* Estilo do conteúdo principal */
+main {
+  flex: 1; /* Faz o main expandir para preencher o espaço */
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #171596; /* Fundo azul escuro */
+  color: #fff; /* Texto branco */
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+  background-color: #f07b1c; /* Cor de fundo laranja */
+  color: #fff; /* Texto branco */
+  border: none;
+  padding: 10px 0; /* Padding vertical */
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 5px 0; /* Margem em cima e embaixo */
+  width: 100%; /* Ocupar toda a largura disponível */
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #696969; /* Cinza mais escuro ao passar o mouse */
+}
+
+/* Estilo do formulário */
+form {
+  max-width: 400px;
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Largura total do formulário */
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 100px; /* Altura do textarea */
+  resize: none; /* Desativa o redimensionamento */
+}
+
+/* Estilização dos botões de redes sociais */
+.social-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 1rem;
+}
+
+.social-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.social-button.github {
+  background-color: #333; /* Cor do GitHub */
+}
+
+.social-button.github:hover {
+  background-color: #555; /* Cor ao passar o mouse */
+}
+
+.social-button.linkedin {
+  background-color: #0077b5; /* Cor do LinkedIn */
+}
+
+.social-button.linkedin:hover {
+  background-color: #005582; /* Cor ao passar o mouse */
+}
+
+/* Estilo da lista de trabalhos */
+.project-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-list ul li {
+  margin-bottom: 10px;
+}
+
+.project-list ul li a {
+  color: #00f; /* Azul para links */
+  text-decoration: none;
+}
+
+.project-list ul li a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
